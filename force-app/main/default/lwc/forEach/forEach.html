@@ -1,0 +1,20 @@
+<template>
+    <lightning-card title=" for each dongusu">
+        <template for:each={cityList} for:item="w">
+            <p key ={w}>{w}</p>
+        </template>
+    </lightning-card>
+    
+    <lightning-card title="Kunden List">
+        <ul>
+            <template for:each={customerList} for:item="w"></template>
+            <li key={w.id}>
+                <div>{w.id} </div>
+                <div>{w.name}</div>
+                <div>{w.phone}</div>
+                <div>{w.email}</div>
+                <div>{w.imgURL}</div>
+            </li>
+        </ul>
+    </lightning-card>
+</template>

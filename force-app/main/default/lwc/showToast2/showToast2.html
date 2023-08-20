@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title=" Toast Ornegi2" icon-name="custom:custom21">
+        <div class="slds-m-around_medium">
+            <lightning-input label="Baslik" value={_title} onchange={titleChange}></lightning-input>
+            <lightning-input label="Mesaj" value={message} onchange={messageChange}></lightning-input>
+            <lightning-combobox 
+            label="Degistir" 
+            value={variant} 
+            onchange={variatChange} 
+            options={variantOptions}>
+
+            </lightning-combobox>
+
+            <p class="slds-m-vertical_small"><lightning-button label="Bildirimleri Goster" onclick={ShowNotification}></lightning-button></p>
+
+        </div>
+    </lightning-card>
+    
+</template> 

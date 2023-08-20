@@ -1,0 +1,18 @@
+<template>
+  <lightning-card title="Iteration" >
+     <template iterator:it={sehirler}>
+     <div key={it} > {it.value} </div>
+     </template>
+ </lightning-card>
+
+    <lightning-card title=" it first last">
+        <template iterator:it={sehirler}>
+        <p key={it.value} if:true={it.first}> {it.value} </p>
+        <p key={it.value} if:true={it.last}> {it.value} </p>
+        <p key={it.value} if:true={it.first}>*****************</p>
+        <p key={it.value}> {it.value} </p>
+        <p key={it.value} if:true={it.last}>==================</p>
+        </template>
+    </lightning-card>
+    
+</template>

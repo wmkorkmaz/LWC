@@ -1,0 +1,13 @@
+ h1{
+    color: red;
+ }
+ p{
+    color:green;
+ }
+ c-my-child-component{
+    color :blueviolet;
+    --renk:pink; 
+ }
+ c-my-child-component h1 {
+    color:yellowgreen; 
+ }

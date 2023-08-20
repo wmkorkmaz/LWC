@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Car">
+        <h1>Audi</h1>
+        <c-car-engine motor-modeli ="4.0 Turbo"></c-car-engine>
+
+        <lightning-input label="Motor Modeli"  placeholder="Motor Modelini Giriniz" onchange={Motor}></lightning-input>
+
+    </lightning-card>
+    <c-car-engine motor-modeli= {motorModeli}> </c-car-engine>
+    
+</template>

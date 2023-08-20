@@ -1,0 +1,22 @@
+<template>
+
+    <lightning-card title=" if true false kullanimi">
+        <h1> flag : {flag} </h1>
+        <template if:true={flag}></template>
+        <h1>flag true bu mesaj goruldu</h1>
+
+    </lightning-card>
+
+    <lightning-card title="Sozlesme">
+        <template if:false={display}>
+            <h1>Lutfen bu sözlesmeyi kabul ediniz</h1>
+
+        </template>
+
+        <lightning-input 
+        type="checkbox"
+        onchange={handleChange}></lightning-input>
+        
+    </lightning-card>
+    
+</template>
