@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title=" Delete Case" icon-name="standard:case">
+        <div class="slds-m-around_medium">
+            <form action=" " class="caseForm">
+                <lightning-input label="Case'i sil" placeholder="RedordId giriniz" onchange={changeHandler} value={recordId}></lightning-input>
+                <div>
+                    <lightning-button class="slds-m-around_medium slds-align_absolute-center  " variant="destructive" label="Delete Case" onclick={deleteRec}>
+                        
+                    </lightning-button>
+                </div>
+            </form>
+        </div>
+    </lightning-card>
+
+    
+</template>

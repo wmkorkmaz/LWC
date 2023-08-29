@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="Track  Ornegi 2 ">
+        <lightning-input type="number" label="Sayi Ekleyiniz" onchange={onchangeHandler}></lightning-input>
+        <lightning-button label="Ekle" onclick={ekleHandler}></lightning-button>+
+
+
+        <template for:each={lstValues} for:item="w">
+            <p key={w}>{w}</p>
+
+        </template>
+
+
+
+
+
+
+    </lightning-card>
+    
+</template>

@@ -1,0 +1,19 @@
+<template>
+
+    <lightning-card title="Ulke Sehir">
+        <lightning-input label="Ulke" onchange={handleUlke}></lightning-input>
+        <lightning-input label="Sehir" onchange={handleSehir}></lightning-input>
+        <lightning-input label="Ney Unlu" onchange={neyUnlu}></lightning-input>
+
+        <c-ulke-sehir-detaylari>
+            <span slot="ulk">{ulke}</span>
+            <span slot="seh">{sehir}</span>
+            <span slot="unl">{unlu}</span>
+        </c-ulke-sehir-detaylari>
+        
+        
+    </lightning-card>
+
+
+    
+</template>

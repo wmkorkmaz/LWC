@@ -1,3 +1,16 @@
 <template>
+
+    <lightning-card title="Update Contact" icon-name="standard:contact">
+        <div class="slds-m-around_medium" >
+        <lightning-record-edit-form 
+        
+        record-id={recordId}
+        object-api-name={objectName}
+        fields={fields}
+        onsuccess={successMessage}>
+
+        </lightning-record-edit-form>
+        </div>
+    </lightning-card>
     
 </template>

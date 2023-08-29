@@ -1,0 +1,26 @@
+<template>
+    <lightning-card title="Getter">
+        <h1>Toplama: {result} </h1>
+
+        <h1> Toplam : {toplama}</h1>#
+        <h1> Fark : {cikarma}</h1>
+        <h1> Carpma : {carpma}</h1>
+        <h1> Bolum  : {bolme}</h1>
+
+       <!-- <h1>Listedeki ilk isim : {isimListesi[0]}</h1>>-->
+
+       <h1> Listedeki ilk isim : {ilkIsim}</h1>
+       <h1>Listedeki son isim: {sonIsim} </h1>
+
+
+
+    </lightning-card>
+
+
+    <lightning-card title=" getter array index">
+        <lightning-input type="number" placeholder="0-4 arasi bir sayi giriniz" onblur={handleBlur}></lightning-input>
+        <h1>{girilenIndex}</h1>
+        
+
+    </lightning-card>
+</template>
